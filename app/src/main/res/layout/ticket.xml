@@ -6,15 +6,15 @@
     android:background="#fff"
     android:orientation="vertical">
 
-    //ticket
+    <!--ticket-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="1dp"
         android:background="@drawable/background_layout"
         android:orientation="vertical">
 
-        // Item, pic, barcode
+        <!--Item, pic, barcode-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,11 +23,10 @@
 
             <TextView
                 android:id="@+id/tvItem"
-                android:layout_width="wrap_content"
+                android:layout_width="253dp"
                 android:layout_height="match_parent"
-                android:hint="Item"
+                android:hint="Item Name"
                 android:padding="8dp"
-                android:textSize="28sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -36,16 +35,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="8dp"
-                app:srcCompat="@drawable/baseline_photo_camera_black_2x" />
+                app:srcCompat="@drawable/baseline_photo_camera_black_1x" />
 
             <ImageButton
                 android:id="@+id/ibBarcode"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#fff"
                 android:padding="8dp"
-                app:srcCompat="@drawable/barcode_icon_2x" />
+                app:srcCompat="@drawable/barcode_icon_1x" />
 
         </LinearLayout>
 
@@ -55,14 +54,22 @@
             android:layout_height="wrap_content"
             android:background="#fff"
             android:hint="@string/description"
+            android:padding="8dp"
             android:text="@string/lorem"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
-        // delete and edit buttons
+        <!-- delete and edit buttons-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
+            <View
+                android:id="@+id/viewEmpty"
+                android:layout_width="253dp"
+                android:layout_height="match_parent"
+                android:layout_weight=""
+                android:background="#fff" />
 
             <ImageButton
                 android:id="@+id/deleteIB"
@@ -70,6 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#fff"
+                android:padding="8dp"
                 app:srcCompat="@drawable/baseline_delete_black_1x" />
 
             <ImageButton
@@ -78,8 +86,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#fff"
+                android:padding="8dp"
                 app:srcCompat="@drawable/baseline_edit_black_x1" />
 
         </LinearLayout>
-
     </LinearLayout>
+</LinearLayout>
