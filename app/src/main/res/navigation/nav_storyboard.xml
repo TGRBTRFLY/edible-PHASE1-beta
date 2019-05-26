@@ -8,5 +8,22 @@
         android:id="@+id/mainFragment"
         android:name="com.pagepetty.notesnav.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_pantryFragment"
+            app:destination="@id/pantryFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_shoppingListFragment"
+            app:destination="@id/shoppingListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantryFragment"
+        android:name="com.pagepetty.edible.PantryFragment"
+        android:label="fragment_pantry"
+        tools:layout="@layout/fragment_pantry" />
+    <fragment
+        android:id="@+id/shoppingListFragment"
+        android:name="com.pagepetty.edible.ShoppingListFragment"
+        android:label="fragment_shopping_list"
+        tools:layout="@layout/fragment_shopping_list" />
 </navigation>
